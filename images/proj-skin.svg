@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 880" font-family="'Space Grotesk','Segoe UI',Inter,sans-serif">
+  <defs>
+    <linearGradient id="skBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12100e"/>
+      <stop offset="1" stop-color="#0c0b0a"/>
+    </linearGradient>
+    <radialGradient id="skGlow" cx="30%" cy="45%" r="60%">
+      <stop offset="0" stop-color="#ff5a1f" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#ff5a1f" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="skDerm" cx="50%" cy="45%" r="60%">
+      <stop offset="0" stop-color="#3a2c24"/>
+      <stop offset="0.55" stop-color="#241b16"/>
+      <stop offset="1" stop-color="#17110d"/>
+    </radialGradient>
+    <radialGradient id="skLesion" cx="48%" cy="46%" r="55%">
+      <stop offset="0" stop-color="#ff884d" stop-opacity="0.85"/>
+      <stop offset="0.5" stop-color="#c8451a" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#7a2a12" stop-opacity="0.15"/>
+    </radialGradient>
+    <linearGradient id="skBar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff5a1f"/>
+      <stop offset="1" stop-color="#ff884d"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="880" fill="url(#skBg)"/>
+  <rect width="1280" height="880" fill="url(#skGlow)"/>
+
+  <!-- header -->
+  <text x="64" y="78" fill="#ff5a1f" font-size="20" letter-spacing="3" font-family="'JetBrains Mono',monospace">CİLT LEZYONU SINIFLANDIRICI</text>
+  <text x="1216" y="78" text-anchor="end" fill="#8b8478" font-size="18" letter-spacing="2" font-family="'JetBrains Mono',monospace">HAM10000 · CNN + XGBoost</text>
+  <line x1="64" y1="104" x2="1216" y2="104" stroke="#f5efe4" stroke-opacity="0.12"/>
+
+  <!-- LEFT: dermatoscope view -->
+  <g>
+    <rect x="64" y="150" width="520" height="620" rx="26" fill="#151311" stroke="#f5efe4" stroke-opacity="0.12"/>
+    <text x="96" y="206" fill="#cbc4b6" font-size="22" font-weight="600">Dermatoskopik Giriş</text>
+    <text x="96" y="234" fill="#8b8478" font-size="15" font-family="'JetBrains Mono',monospace">input · 224×224</text>
+
+    <!-- scope circle -->
+    <circle cx="324" cy="480" r="196" fill="url(#skDerm)" stroke="#f5efe4" stroke-opacity="0.14"/>
+    <!-- abstract clean lesion -->
+    <path d="M324 320 C405 322 445 372 448 452 C451 540 402 620 324 626 C243 632 205 556 204 470 C203 388 246 320 324 320 Z" fill="url(#skLesion)"/>
+    <ellipse cx="300" cy="452" rx="70" ry="86" fill="#5a1f0c" fill-opacity="0.5"/>
+    <!-- reticle -->
+    <circle cx="324" cy="480" r="196" fill="none" stroke="#ff5a1f" stroke-opacity="0.35" stroke-dasharray="2 10"/>
+    <line x1="324" y1="268" x2="324" y2="316" stroke="#ff5a1f" stroke-width="2"/>
+    <line x1="324" y1="644" x2="324" y2="692" stroke="#ff5a1f" stroke-width="2"/>
+    <line x1="112" y1="480" x2="160" y2="480" stroke="#ff5a1f" stroke-width="2"/>
+    <line x1="488" y1="480" x2="536" y2="480" stroke="#ff5a1f" stroke-width="2"/>
+    <!-- corner brackets -->
+    <path d="M150 340 h-30 v30 M498 340 h30 v30 M150 620 h-30 v-30 M498 620 h30 v-30" fill="none" stroke="#f5efe4" stroke-opacity="0.3" stroke-width="2"/>
+  </g>
+
+  <!-- RIGHT: predictions -->
+  <g>
+    <rect x="624" y="150" width="592" height="620" rx="26" fill="#151311" stroke="#f5efe4" stroke-opacity="0.12"/>
+    <text x="660" y="206" fill="#f5efe4" font-size="24" font-weight="700">Tahmin Güveni</text>
+
+    <!-- accuracy chip -->
+    <rect x="1010" y="180" width="172" height="46" rx="23" fill="#ff5a1f" fill-opacity="0.14" stroke="#ff5a1f" stroke-opacity="0.5"/>
+    <text x="1096" y="209" text-anchor="middle" fill="#ff884d" font-size="16" font-weight="600" font-family="'JetBrains Mono',monospace">DOĞRULUK %82</text>
+
+    <!-- bars -->
+    <!-- 1 Melanoma highlighted -->
+    <g transform="translate(660,258)">
+      <text x="0" y="0" fill="#f5efe4" font-size="18" font-weight="600">Melanom</text>
+      <text x="496" y="0" text-anchor="end" fill="#ff884d" font-size="18" font-weight="700" font-family="'JetBrains Mono',monospace">91%</text>
+      <rect x="0" y="14" width="496" height="16" rx="8" fill="#0c0b0a" stroke="#f5efe4" stroke-opacity="0.1"/>
+      <rect x="0" y="14" width="451" height="16" rx="8" fill="url(#skBar)"/>
+    </g>
+    <!-- others -->
+    <g transform="translate(660,326)" fill="#cbc4b6">
+      <text x="0" y="0" font-size="16">Melanositik Nevüs</text>
+      <text x="496" y="0" text-anchor="end" font-size="16" font-family="'JetBrains Mono',monospace">5.0%</text>
+      <rect x="0" y="12" width="496" height="12" rx="6" fill="#0c0b0a" stroke="#f5efe4" stroke-opacity="0.1"/>
+      <rect x="0" y="12" width="26" height="12" rx="6" fill="#8b8478"/>
+    </g>
+    <g transform="translate(660,388)" fill="#cbc4b6">
+      <text x="0" y="0" font-size="16">Bazal Hücreli Karsinom</text>
+      <text x="496" y="0" text-anchor="end" font-size="16" font-family="'JetBrains Mono',monospace">2.0%</text>
+      <rect x="0" y="12" width="496" height="12" rx="6" fill="#0c0b0a" stroke="#f5efe4" stroke-opacity="0.1"/>
+      <rect x="0" y="12" width="16" height="12" rx="6" fill="#8b8478"/>
+    </g>
+    <g transform="translate(660,450)" fill="#cbc4b6">
+      <text x="0" y="0" font-size="16">İyi Huylu Keratoz</text>
+      <text x="496" y="0" text-anchor="end" font-size="16" font-family="'JetBrains Mono',monospace">1.0%</text>
+      <rect x="0" y="12" width="496" height="12" rx="6" fill="#0c0b0a" stroke="#f5efe4" stroke-opacity="0.1"/>
+      <rect x="0" y="12" width="12" height="12" rx="6" fill="#8b8478"/>
+    </g>
+    <g transform="translate(660,512)" fill="#cbc4b6">
+      <text x="0" y="0" font-size="16">Aktinik Keratoz</text>
+      <text x="496" y="0" text-anchor="end" font-size="16" font-family="'JetBrains Mono',monospace">0.6%</text>
+      <rect x="0" y="12" width="496" height="12" rx="6" fill="#0c0b0a" stroke="#f5efe4" stroke-opacity="0.1"/>
+      <rect x="0" y="12" width="9" height="12" rx="6" fill="#8b8478"/>
+    </g>
+    <g transform="translate(660,574)" fill="#cbc4b6">
+      <text x="0" y="0" font-size="16">Vasküler Lezyon</text>
+      <text x="496" y="0" text-anchor="end" font-size="16" font-family="'JetBrains Mono',monospace">0.3%</text>
+      <rect x="0" y="12" width="496" height="12" rx="6" fill="#0c0b0a" stroke="#f5efe4" stroke-opacity="0.1"/>
+      <rect x="0" y="12" width="7" height="12" rx="6" fill="#8b8478"/>
+    </g>
+    <g transform="translate(660,636)" fill="#cbc4b6">
+      <text x="0" y="0" font-size="16">Dermatofibrom</text>
+      <text x="496" y="0" text-anchor="end" font-size="16" font-family="'JetBrains Mono',monospace">0.1%</text>
+      <rect x="0" y="12" width="496" height="12" rx="6" fill="#0c0b0a" stroke="#f5efe4" stroke-opacity="0.1"/>
+      <rect x="0" y="12" width="6" height="12" rx="6" fill="#8b8478"/>
+    </g>
+
+    <line x1="660" y1="694" x2="1180" y2="694" stroke="#f5efe4" stroke-opacity="0.1"/>
+    <text x="660" y="732" fill="#8b8478" font-size="15" font-family="'JetBrains Mono',monospace">7 sınıf · transfer learning · Gradio · Hugging Face</text>
+  </g>
+</svg>

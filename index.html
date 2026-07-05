@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Barış Alışkan — Bilgisayar & Yapay Zekâ Mühendisi</title>
+<meta name="description" content="Barış Alışkan — Bilgisayar & Yapay Zekâ Mühendisi. Generative AI, LLM, RAG ve Agent mimarilerinden cihaz-üstü yapay zekâ ürünlerine kadar uçtan uca geliştiriyorum." />
+<meta name="author" content="Barış Alışkan" />
+<meta property="og:title" content="Barış Alışkan — Bilgisayar & Yapay Zekâ Mühendisi" />
+<meta property="og:description" content="Fikirleri gerçekten işe yarayan yapay zekâ ürünlerine dönüştürüyorum." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://barisaliskan.github.io" />
+<meta property="og:image" content="https://barisaliskan.github.io/images/portrait.webp" />
+<meta name="theme-color" content="#0a0a0c" />
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+<link rel="canonical" href="https://barisaliskan.github.io" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo">Barış Alışkan<span class="accent-dot">.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about"      data-tr="Hakkımda"   data-en="About">Hakkımda</a>
+      <a href="#journey"    data-tr="Eğitim"     data-en="Journey">Eğitim</a>
+      <a href="#experience" data-tr="Deneyim"    data-en="Career">Deneyim</a>
+      <a href="#projects"   data-tr="Projeler"   data-en="Projects">Projeler</a>
+      <a href="#skills"     data-tr="Yetenekler" data-en="Skills">Yetenekler</a>
+      <a href="#contact" class="nav-cta" data-magnetic data-tr="İletişime Geç" data-en="Let’s Talk">İletişime Geç</a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang-switch" id="langSwitch">
+        <button class="lang-btn active" data-lang="tr">TR</button><span>/</span><button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero section" id="hero">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <span class="eyebrow reveal" data-tr="Bilgisayar &amp; Yapay Zekâ Mühendisi — İstanbul" data-en="Computer &amp; AI Engineer — İstanbul">Bilgisayar &amp; Yapay Zekâ Mühendisi — İstanbul</span>
+      <h1 class="hero-title">
+        <span class="reveal-line"><span>Barış</span></span>
+        <span class="reveal-line"><span>Alışkan<span class="accent-dot">.</span></span></span>
+      </h1>
+      <p class="hero-lead reveal" data-html="1"
+         data-tr="Yapay zekâya meraklı bir mühendisim; özellikle <em>LLM ve agent sistemleri</em> üzerine bu alanda öğrenmeye ve üretmeye devam ediyorum. Fikirleri işe yarayan ürünlere dönüştürmeyi seviyorum."
+         data-en="An engineer passionate about AI — I keep learning and building in this space, especially <em>LLM and agent systems</em>, and love turning ideas into products that work.">
+        Yapay zekâya meraklı bir mühendisim; özellikle <em>LLM ve agent sistemleri</em> üzerine bu alanda öğrenmeye ve üretmeye devam ediyorum. Fikirleri işe yarayan ürünlere dönüştürmeyi seviyorum.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="https://www.linkedin.com/in/barisaliskan" target="_blank" rel="noopener" class="hero-link" data-magnetic>LinkedIn <span class="arr">↗</span></a>
+        <a href="mailto:barisoriginal@gmail.com" class="hero-link" data-magnetic><span data-tr="E-posta" data-en="Email">E-posta</span> <span class="arr">↗</span></a>
+        <a href="tel:+905050347961" class="hero-link" data-magnetic><span data-tr="Telefon" data-en="Phone">Telefon</span> <span class="arr">↗</span></a>
+      </div>
+      <a href="assets/Baris_Aliskan_CV.pdf" download class="btn-cv reveal" data-magnetic>
+        <span data-tr="CV İndir" data-en="Download CV">CV İndir</span> <span>↓</span>
+      </a>
+    </div>
+    <div class="hero-visual reveal">
+      <figure class="hero-photo">
+        <img src="images/portrait.webp" alt="Barış Alışkan" fetchpriority="high" />
+        <figcaption><span data-tr="Marmara Üniversitesi · Mezun 2026" data-en="Marmara University · Class of 2026">Marmara Üniversitesi · Mezun 2026</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Generative AI</span><span>LLM</span><span>RAG</span><span>AI Agents</span><span>Computer Vision</span><span>On-device AI</span><span>Automation</span>
+    <span>Generative AI</span><span>LLM</span><span>RAG</span><span>AI Agents</span><span>Computer Vision</span><span>On-device AI</span><span>Automation</span>
+  </div>
+</div>
+
+<!-- ============ STATEMENT ============ -->
+<section class="statement section" id="statement">
+  <div class="stmt-glow" aria-hidden="true"></div>
+  <p class="statement-text reveal" data-html="1"
+     data-tr="Ben Barış — <span class='hl'>yapay zekâ</span> alanında kendini sürekli geliştirmeye çalışan bir mühendisim. <span class='hl'>LLM tabanlı sohbet ve agent sistemleri</span> kuruyor, fikirleri <span class='hl'>gerçek ürünlere</span> dönüştürmeyi seviyorum."
+     data-en="I’m Barış — an engineer who keeps growing in <span class='hl'>artificial intelligence</span>. I build <span class='hl'>LLM-based chat and agent systems</span> and love turning ideas into <span class='hl'>real products</span>.">Ben Barış — <span class="hl">yapay zekâ</span> alanında kendini sürekli geliştirmeye çalışan bir mühendisim. <span class="hl">LLM tabanlı sohbet ve agent sistemleri</span> kuruyor, fikirleri <span class="hl">gerçek ürünlere</span> dönüştürmeyi seviyorum.</p>
+</section>
+
+<!-- ============ METRICS (genel istatistikler) ============ -->
+<section class="section metrics-sec">
+  <div class="metrics">
+    <div class="metric reveal">
+      <span class="metric-num"><span data-count="10">0</span><span class="unit">+</span></span>
+      <span class="metric-label" data-tr="Sertifika &amp; Eğitim" data-en="Certificates &amp; Training">Sertifika &amp; Eğitim</span>
+    </div>
+    <div class="metric reveal">
+      <span class="metric-num"><span data-count="4">0</span><span class="unit"> yıl</span></span>
+      <span class="metric-label" data-tr="Sosyal kulüp yöneticiliği" data-en="Years leading student clubs">Sosyal kulüp yöneticiliği</span>
+    </div>
+    <div class="metric reveal">
+      <span class="metric-num"><span data-count="4">0</span><span class="unit">+</span></span>
+      <span class="metric-label" data-tr="Uçtan uca yapay zekâ projesi" data-en="End-to-end AI projects">Uçtan uca yapay zekâ projesi</span>
+    </div>
+    <div class="metric reveal">
+      <span class="metric-num"><span data-count="2">0</span></span>
+      <span class="metric-label" data-tr="Kurumda profesyonel deneyim" data-en="Companies worked with">Kurumda profesyonel deneyim</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SPECIALISATION + PARTICLE SPHERE ============ -->
+<section class="section spec-sec">
+  <div class="section-head reveal">
+    <span class="section-num">01</span>
+    <h2 class="section-title" data-tr="Üzerine Çalıştığım Alanlar" data-en="Areas I Work In">Üzerine Çalıştığım Alanlar</h2>
+    <p class="section-sub" data-tr="Öğrenmeye ve denemeye devam ettiğim konular" data-en="Topics I keep learning and building with">Öğrenmeye ve denemeye devam ettiğim konular</p>
+  </div>
+  <div class="spec-layout">
+    <div class="spec-list">
+      <div class="spec-item reveal"><span class="spec-n">01</span><div class="spec-text"><strong data-tr="Generative AI &amp; LLM" data-en="Generative AI &amp; LLMs">Generative AI &amp; LLM</strong><span data-tr="Büyük dil modelleriyle metin üretimi ve uygulama geliştirme" data-en="Text generation and app building with large language models">Büyük dil modelleriyle metin üretimi ve uygulama geliştirme</span></div></div>
+      <div class="spec-item reveal"><span class="spec-n">02</span><div class="spec-text"><strong data-tr="RAG &amp; Bilgi Getirme" data-en="RAG &amp; Retrieval">RAG &amp; Bilgi Getirme</strong><span data-tr="Dokümanlardan bağlam getirip dayanaklı yanıtlar üretme" data-en="Retrieving context from documents for grounded answers">Dokümanlardan bağlam getirip dayanaklı yanıtlar üretme</span></div></div>
+      <div class="spec-item reveal"><span class="spec-n">03</span><div class="spec-text"><strong data-tr="AI Agent Sistemleri" data-en="AI Agent Systems">AI Agent Sistemleri</strong><span data-tr="Araç kullanan, çok adımlı akışlar kuran agent’lar" data-en="Agents that use tools and run multi-step flows">Araç kullanan, çok adımlı akışlar kuran agent’lar</span></div></div>
+      <div class="spec-item reveal"><span class="spec-n">04</span><div class="spec-text"><strong data-tr="Prompt Mühendisliği" data-en="Prompt Engineering">Prompt Mühendisliği</strong><span data-tr="Modelleri ihtiyaca göre yönlendirme ve iyileştirme" data-en="Guiding and refining models for the task at hand">Modelleri ihtiyaca göre yönlendirme ve iyileştirme</span></div></div>
+      <div class="spec-item reveal"><span class="spec-n">05</span><div class="spec-text"><strong data-tr="Bilgisayarlı Görü" data-en="Computer Vision">Bilgisayarlı Görü</strong><span data-tr="Görüntü işleme ve sınıflandırma üzerine denemeler" data-en="Experiments in image processing and classification">Görüntü işleme ve sınıflandırma üzerine denemeler</span></div></div>
+      <div class="spec-item reveal"><span class="spec-n">06</span><div class="spec-text"><strong data-tr="Model Eğitimi (CNN)" data-en="Model Training (CNN)">Model Eğitimi (CNN)</strong><span data-tr="Küçük ölçekli model eğitimi ve transfer learning" data-en="Small-scale model training and transfer learning">Küçük ölçekli model eğitimi ve transfer learning</span></div></div>
+      <div class="spec-item reveal"><span class="spec-n">07</span><div class="spec-text"><strong data-tr="İş Akışı Otomasyonu" data-en="Workflow Automation">İş Akışı Otomasyonu</strong><span data-tr="n8n ile tekrar eden işleri otomatikleştirme" data-en="Automating repetitive work with n8n">n8n ile tekrar eden işleri otomatikleştirme</span></div></div>
+      <div class="spec-item reveal"><span class="spec-n">08</span><div class="spec-text"><strong data-tr="Backend &amp; API" data-en="Backend &amp; API">Backend &amp; API</strong><span data-tr="FastAPI ile servisler ve entegrasyonlar" data-en="Services and integrations with FastAPI">FastAPI ile servisler ve entegrasyonlar</span></div></div>
+    </div>
+    <div class="spec-visual reveal" aria-hidden="true">
+      <div class="orbit orbit-1"></div>
+      <div class="orbit orbit-2"><span class="orbit-dot"></span></div>
+      <div class="orbit orbit-3"><span class="orbit-dot"></span></div>
+      <div class="orbit-core"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section about" id="about">
+  <div class="section-head reveal">
+    <span class="section-num">02</span>
+    <h2 class="section-title" data-tr="Hakkımda" data-en="About">Hakkımda</h2>
+  </div>
+  <div class="about-grid">
+    <figure class="about-photo reveal">
+      <img src="images/about.webp" alt="Barış Alışkan — Marmara Üniversitesi Teknoloji Fakültesi" loading="lazy" />
+    </figure>
+    <div class="about-text reveal">
+      <h3 class="about-headline" data-tr="Öğrenmeye aç, üretmeye hevesli bir yapay zekâ mühendisiyim." data-en="An AI engineer — hungry to learn, eager to build.">Öğrenmeye aç, üretmeye hevesli bir yapay zekâ mühendisiyim.</h3>
+      <p data-tr="Marmara Üniversitesi Bilgisayar Mühendisliği’nden Temmuz 2026’da mezun oldum. Generative AI ve otomasyon üzerine profesyonel deneyime sahibim: Experilabs’te üretim ortamında LLM ve agent tabanlı sistemler geliştirdim, Patika Global’de yapay zekâ destekli otomasyon süreçlerinde çalıştım."
+         data-en="I graduated in Computer Engineering from Marmara University in July 2026, with hands-on professional experience in Generative AI and automation. At Experilabs I built LLM and agent-based systems in production, and at Patika Global I worked on AI-driven automation pipelines.">Marmara Üniversitesi Bilgisayar Mühendisliği’nden Temmuz 2026’da mezun oldum. Generative AI ve otomasyon üzerine profesyonel deneyime sahibim: Experilabs’te üretim ortamında LLM ve agent tabanlı sistemler geliştirdim, Patika Global’de yapay zekâ destekli otomasyon süreçlerinde çalıştım.</p>
+      <p data-tr="Odağım net: büyük dil modellerini, RAG ve agent mimarilerini gerçek ürünlere dönüştürmek. Bu alanda çalışmaya istekli ve motivasyonluyum; yeni fırsatlar ve iş birlikleri için sabırsızlanıyorum."
+         data-en="My focus is clear: turning large language models, RAG and agent architectures into real products. I’m eager and motivated to work in this field and can’t wait for new opportunities and collaborations.">Odağım net: büyük dil modellerini, RAG ve agent mimarilerini gerçek ürünlere dönüştürmek. Bu alanda çalışmaya istekli ve motivasyonluyum; yeni fırsatlar ve iş birlikleri için sabırsızlanıyorum.</p>
+      <div class="about-badges">
+        <span class="badge">📍 <span data-tr="İstanbul, Türkiye" data-en="İstanbul, Türkiye">İstanbul, Türkiye</span></span>
+        <span class="badge"><span data-tr="22 yaşında" data-en="Age 22">22 yaşında</span></span>
+        <span class="badge"><span data-tr="İngilizce B1" data-en="English B1">İngilizce B1</span></span>
+        <span class="badge"><span data-tr="Yeni fırsatlara açık" data-en="Open to opportunities">Yeni fırsatlara açık</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section class="section journey" id="journey">
+  <div class="section-head reveal">
+    <span class="section-num">03</span>
+    <h2 class="section-title" data-tr="Eğitim" data-en="Education">Eğitim</h2>
+  </div>
+
+  <div class="jcards">
+    <article class="jcard reveal">
+      <figure class="jcard-media">
+        <img src="images/edu-marmara.webp" alt="Marmara Üniversitesi Teknoloji Fakültesi" loading="lazy" />
+        <figcaption>Marmara Ü. · Teknoloji Fakültesi</figcaption>
+      </figure>
+      <div class="jcard-body">
+        <span class="jcard-year">2023 — 2026</span>
+        <h4 class="jcard-title" data-tr="Bilgisayar Mühendisliği" data-en="Computer Engineering">Bilgisayar Mühendisliği</h4>
+        <span class="jcard-org">Marmara Üniversitesi · <span data-tr="Teknoloji Fakültesi · Lisans" data-en="Faculty of Technology · BSc">Teknoloji Fakültesi · Lisans</span></span>
+        <div class="jcard-gpa"><strong>2.8</strong><span data-tr="/ 4.0 GANO" data-en="/ 4.0 GPA">/ 4.0 GANO</span></div>
+        <p data-tr="Yapay zekâ, derin öğrenme ve bilgisayarlı görüye yoğunlaştım; bitirme projem MIO’yu bu süreçte geliştirdim." data-en="Focused on AI, deep learning and computer vision; built my thesis project MIO during this period.">Yapay zekâ, derin öğrenme ve bilgisayarlı görüye yoğunlaştım; bitirme projem MIO’yu bu süreçte geliştirdim.</p>
+        <span class="jcard-courses-label" data-tr="Öne çıkan dersler" data-en="Key courses">Öne çıkan dersler</span>
+        <div class="tag-row">
+          <span data-tr="Veri Madenciliği" data-en="Data Mining">Veri Madenciliği</span>
+          <span data-tr="Görüntü İşleme Teknikleri" data-en="Image Processing">Görüntü İşleme Teknikleri</span>
+          <span data-tr="Yapay Zekâya Giriş" data-en="Intro to AI">Yapay Zekâya Giriş</span>
+          <span data-tr="Büyük Veri" data-en="Big Data">Büyük Veri</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="jcard reveal">
+      <figure class="jcard-media">
+        <img src="images/edu-ktu.webp" alt="Karadeniz Teknik Üniversitesi" loading="lazy" />
+        <figcaption>Karadeniz Teknik Üniversitesi</figcaption>
+      </figure>
+      <div class="jcard-body">
+        <span class="jcard-year">2022 — 2023</span>
+        <h4 class="jcard-title" data-tr="Yazılım Mühendisliği" data-en="Software Engineering">Yazılım Mühendisliği</h4>
+        <span class="jcard-org">Karadeniz Teknik Üniversitesi · <span data-tr="Of Teknoloji Fakültesi · Lisans" data-en="Of Faculty of Technology · BSc">Of Teknoloji Fakültesi · Lisans</span></span>
+        <div class="jcard-gpa"><strong>3.3</strong><span data-tr="/ 4.0 GANO" data-en="/ 4.0 GPA">/ 4.0 GANO</span></div>
+        <p data-tr="Yazılım temellerini güçlü bir akademik ortalamayla tamamladıktan sonra Marmara Bilgisayar Mühendisliği’ne yatay geçiş yaptım." data-en="After completing my software foundations with a strong GPA, I transferred to Computer Engineering at Marmara.">Yazılım temellerini güçlü bir akademik ortalamayla tamamladıktan sonra Marmara Bilgisayar Mühendisliği’ne yatay geçiş yaptım.</p>
+        <span class="jcard-courses-label" data-tr="Öne çıkan dersler" data-en="Key courses">Öne çıkan dersler</span>
+        <div class="tag-row">
+          <span data-tr="Programlamaya Giriş" data-en="Intro to Programming">Programlamaya Giriş</span>
+          <span data-tr="Veri Yapıları" data-en="Data Structures">Veri Yapıları</span>
+          <span data-tr="Nesne Yönelimli Programlama" data-en="OOP">Nesne Yönelimli Programlama</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="jcard reveal">
+      <figure class="jcard-media">
+        <img src="images/edu-lise.webp" alt="Sabiha Gökçen Mesleki ve Teknik Anadolu Lisesi" loading="lazy" />
+        <figcaption>Sabiha Gökçen M.T.A.L</figcaption>
+      </figure>
+      <div class="jcard-body">
+        <span class="jcard-year">2017 — 2021</span>
+        <h4 class="jcard-title" data-tr="Uçak Bakım Alanı" data-en="Aircraft Maintenance">Uçak Bakım Alanı</h4>
+        <span class="jcard-org">Sabiha Gökçen M.T.A.L · <span data-tr="Teknik Sınıf · Meslek Lisesi" data-en="Technical Track · Vocational">Teknik Sınıf · Meslek Lisesi</span></span>
+        <div class="jcard-gpa"><strong>83.4</strong><span data-tr="/ 100 Diploma" data-en="/ 100 Diploma">/ 100 Diploma</span></div>
+        <p data-tr="Teknik sınıfta havacılık bakım eğitimi aldım ve drone projeleri geliştirdim. Prosedür-odaklı, disiplinli mühendislik bakış açımın temeli burada atıldı." data-en="Took aviation maintenance training in the technical track and built drone projects. The foundation of my procedure-driven, disciplined engineering mindset.">Teknik sınıfta havacılık bakım eğitimi aldım ve drone projeleri geliştirdim. Prosedür-odaklı, disiplinli mühendislik bakış açımın temeli burada atıldı.</p>
+        <span class="jcard-courses-label" data-tr="Öne çıkanlar" data-en="Highlights">Öne çıkanlar</span>
+        <div class="tag-row">
+          <span data-tr="Drone Projeleri" data-en="Drone Projects">Drone Projeleri</span>
+          <span data-tr="Havacılık Bakımı" data-en="Aircraft Maintenance">Havacılık Bakımı</span>
+          <span data-tr="Teknik Sınıf" data-en="Technical Track">Teknik Sınıf</span>
+        </div>
+      </div>
+    </article>
+  </div>
+
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section experience" id="experience">
+  <div class="section-head reveal">
+    <span class="section-num">04</span>
+    <h2 class="section-title" data-tr="Deneyim" data-en="Career">Deneyim</h2>
+    <p class="section-sub" data-tr="Ürettiğim yerler" data-en="Where I’ve shipped">Ürettiğim yerler</p>
+  </div>
+
+  <div class="xp-list">
+    <article class="xp-row reveal">
+      <div class="xp-index">01</div>
+      <div class="xp-main">
+        <div class="xp-top">
+          <div>
+            <h3 class="xp-role">Generative AI Engineer</h3>
+            <span class="xp-org">Experilabs · Saha BT</span>
+          </div>
+          <span class="xp-date">09.2025 — 01.2026</span>
+        </div>
+        <p class="xp-lead" data-tr="Üretim ortamında büyük dil modelleri ve agent tabanlı sistemler geliştirdim; fikir aşamasından canlı ürüne kadar tüm süreçte yer aldım."
+           data-en="Built large language model and agent-based systems in production, owning the full path from concept to a live product.">Üretim ortamında büyük dil modelleri ve agent tabanlı sistemler geliştirdim; fikir aşamasından canlı ürüne kadar tüm süreçte yer aldım.</p>
+        <ul class="xp-bullets">
+          <li data-tr="LLM tabanlı RAG hatları kurdum: doküman getirme, bağlam yönetimi ve yanıt üretimini uçtan uca tasarladım." data-en="Designed LLM-based RAG pipelines end-to-end — document retrieval, context management and response generation.">LLM tabanlı RAG hatları kurdum: doküman getirme, bağlam yönetimi ve yanıt üretimini uçtan uca tasarladım.</li>
+          <li data-tr="Agent mimarileri (Agno, LangChain) ve function calling ile çok adımlı iş akışlarını otomatikleştirdim." data-en="Automated multi-step workflows with agent architectures (Agno, LangChain) and function calling.">Agent mimarileri (Agno, LangChain) ve function calling ile çok adımlı iş akışlarını otomatikleştirdim.</li>
+          <li data-tr="GPT-4o ve Gemini modellerini prompt mühendisliğiyle ürün gereksinimlerine göre optimize ettim." data-en="Optimised GPT-4o and Gemini models to product requirements through prompt engineering.">GPT-4o ve Gemini modellerini prompt mühendisliğiyle ürün gereksinimlerine göre optimize ettim.</li>
+        </ul>
+        <div class="tag-row"><span>LLM</span><span>RAG</span><span>Agent</span><span>Agno</span><span>LangChain</span><span>GPT-4o</span><span>Gemini</span><span>Function Calling</span></div>
+      </div>
+    </article>
+
+    <article class="xp-row reveal">
+      <div class="xp-index">02</div>
+      <div class="xp-main">
+        <div class="xp-top">
+          <div>
+            <h3 class="xp-role" data-tr="AI Automation Engineer — Stajyer" data-en="AI Automation Engineer — Intern">AI Automation Engineer — Stajyer</h3>
+            <span class="xp-org">Patika Global Technology</span>
+          </div>
+          <span class="xp-date">06.2025 — 09.2025</span>
+        </div>
+        <p class="xp-lead" data-tr="Yapay zekâ destekli otomasyon süreçleri tasarladım; tekrar eden iş akışlarını LLM ve düşük kodlu araçlarla otomatikleştirdim."
+           data-en="Designed AI-driven automation processes, automating repetitive workflows with LLMs and low-code tooling.">Yapay zekâ destekli otomasyon süreçleri tasarladım; tekrar eden iş akışlarını LLM ve düşük kodlu araçlarla otomatikleştirdim.</p>
+        <ul class="xp-bullets">
+          <li data-tr="n8n ile uçtan uca otomasyon akışları kurdum; API entegrasyonları ve tetikleyicilerle manuel işleri ortadan kaldırdım." data-en="Built end-to-end automation flows in n8n — eliminating manual work with API integrations and triggers.">n8n ile uçtan uca otomasyon akışları kurdum; API entegrasyonları ve tetikleyicilerle manuel işleri ortadan kaldırdım.</li>
+          <li data-tr="LLM tabanlı sınıflandırma ve metin işleme adımlarını iş akışlarına entegre ettim." data-en="Integrated LLM-based classification and text-processing steps into production workflows.">LLM tabanlı sınıflandırma ve metin işleme adımlarını iş akışlarına entegre ettim.</li>
+          <li data-tr="Prompt tasarımı ve test döngüleriyle otomasyonların doğruluğunu ve güvenilirliğini artırdım." data-en="Improved accuracy and reliability of automations through prompt design and test loops.">Prompt tasarımı ve test döngüleriyle otomasyonların doğruluğunu ve güvenilirliğini artırdım.</li>
+        </ul>
+        <div class="tag-row"><span>n8n</span><span>Otomasyon</span><span>LLM</span><span>API</span><span>Prompt Müh.</span><span>Python</span></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="projects-sec" id="projects">
+  <div class="section spec-head-wrap">
+    <div class="section-head reveal" style="margin-bottom:0">
+      <span class="section-num">05</span>
+      <h2 class="section-title" data-tr="Projeler" data-en="Projects">Projeler</h2>
+      <p class="section-sub" data-tr="Fikirden ürüne — kaydırarak keşfet" data-en="From idea to product — scroll to explore">Fikirden ürüne — kaydırarak keşfet</p>
+    </div>
+  </div>
+
+  <!-- MIO full-bleed cinematic scroll-driven gallery -->
+  <section class="mio-scroll" id="mioScroll">
+    <div class="mio-sticky">
+      <div class="carousel">
+        <div class="carousel-glow" aria-hidden="true"></div>
+        <div class="carousel-inner">
+          <div class="carousel-info">
+            <span class="proj-badge" data-tr="Bitirme Projesi · Cihaz-üstü" data-en="Thesis · On-device">Bitirme Projesi · Cihaz-üstü</span>
+            <h3 class="carousel-title">MIO</h3>
+            <p class="carousel-desc" data-tr="Tamamen cihaz üzerinde, internete çıkmadan çalışan kişisel yapay zekâ asistanı. Büyük dil modelleri telefonun kendi donanımında çalışır; veriler cihazdan çıkmaz."
+               data-en="A personal AI assistant that runs entirely on-device, with no internet. Large language models run on the phone’s own hardware and data never leaves the device.">Tamamen cihaz üzerinde, internete çıkmadan çalışan kişisel yapay zekâ asistanı. Büyük dil modelleri telefonun kendi donanımında çalışır; veriler cihazdan çıkmaz.</p>
+            <div class="tag-row"><span>On-device LLM</span><span>React Native</span><span>Expo</span><span>TypeScript</span><span>Gizlilik</span></div>
+            <a href="https://barisaliskan.github.io/mio" target="_blank" rel="noopener" class="proj-link" data-magnetic><span data-tr="Canlı Tanıtım" data-en="Live Demo">Canlı Tanıtım</span> ↗</a>
+            <div class="carousel-controls">
+              <span class="car-count"><span id="carCur">1</span> / <span id="carTot">7</span></span>
+              <div class="car-progress" aria-hidden="true"><span id="carProgress"></span></div>
+              <span class="car-hint" data-tr="↓ Kaydırarak gez" data-en="↓ Scroll to explore">↓ Kaydırarak gez</span>
+            </div>
+          </div>
+          <div class="carousel-stage">
+            <div class="carousel-track" id="carTrack">
+              <figure class="car-slide"><img src="images/proj-mio-1.webp" alt="MIO — günün özeti" loading="lazy" /></figure>
+              <figure class="car-slide"><img src="images/proj-mio-2.webp" alt="MIO — sohbet" loading="lazy" /></figure>
+              <figure class="car-slide"><img src="images/proj-mio-3.webp" alt="MIO — günlük haberler" loading="lazy" /></figure>
+              <figure class="car-slide"><img src="images/proj-mio-4.webp" alt="MIO — kariyer modülü" loading="lazy" /></figure>
+              <figure class="car-slide"><img src="images/proj-mio-5.webp" alt="MIO — geçmiş sohbetler" loading="lazy" /></figure>
+              <figure class="car-slide"><img src="images/proj-mio-6.webp" alt="MIO — ayarlar" loading="lazy" /></figure>
+              <figure class="car-slide"><img src="images/proj-mio-7.webp" alt="MIO — açık tema" loading="lazy" /></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- stacked cinematic project rows -->
+  <div class="section proj-rows">
+    <article class="proj-row reveal">
+      <figure class="proj-row-media"><img src="images/proj-skin.webp" alt="Cilt lezyonu — dermatoskopik görüntü" loading="lazy" /></figure>
+      <div class="proj-row-text">
+        <span class="proj-row-num">02</span>
+        <span class="proj-tag-year" data-tr="Derin Öğrenme · Bilgisayarlı Görü" data-en="Deep Learning · Computer Vision">Derin Öğrenme · Bilgisayarlı Görü</span>
+        <h3 class="proj-row-title" data-tr="Cilt Kanseri Sınıflandırıcı" data-en="Skin Lesion Classifier">Cilt Kanseri Sınıflandırıcı</h3>
+        <p data-tr="HAM10000 veri setiyle eğitilmiş, 7 sınıflı bir cilt lezyonu sınıflandırma modeli. CNN + transfer learning ve XGBoost ile ~%82 doğruluk elde ettim. Model, dermatoskopik görüntülerden melanom dâhil lezyon türlerini ayırt ediyor ve Hugging Face üzerinde canlı olarak çalışıyor."
+           data-en="A 7-class skin-lesion classification model trained on HAM10000. Using CNN + transfer learning and XGBoost it reaches ~82% accuracy, distinguishing lesion types including melanoma from dermatoscopic images, and runs live on Hugging Face.">HAM10000 veri setiyle eğitilmiş, 7 sınıflı bir cilt lezyonu sınıflandırma modeli. CNN + transfer learning ve XGBoost ile ~%82 doğruluk elde ettim. Model, dermatoskopik görüntülerden melanom dâhil lezyon türlerini ayırt ediyor ve Hugging Face üzerinde canlı olarak çalışıyor.</p>
+        <div class="proj-stats"><div><strong>%82</strong><span data-tr="Doğruluk" data-en="Accuracy">Doğruluk</span></div><div><strong>7</strong><span data-tr="Lezyon sınıfı" data-en="Lesion classes">Lezyon sınıfı</span></div></div>
+        <div class="tag-row"><span>TensorFlow</span><span>Keras</span><span>XGBoost</span><span>HAM10000</span><span>Gradio</span></div>
+      </div>
+    </article>
+
+    <article class="proj-row proj-row-rev reveal">
+      <figure class="proj-row-media proj-row-chart"><img src="images/proj-drug.webp" alt="İlaç–belirti tespiti — yöntem karşılaştırması" loading="lazy" /></figure>
+      <div class="proj-row-text">
+        <span class="proj-row-num">03</span>
+        <span class="proj-tag-year">RAG · LLM · Veri Mühendisliği</span>
+        <h3 class="proj-row-title" data-tr="İlaç–Belirti Tespiti" data-en="Drug–Symptom Detector">İlaç–Belirti Tespiti</h3>
+        <p data-tr="openFDA, FAERS, SIDER ve OnSIDES kaynaklarından 3.5M+ kaydı işleyen bir ilaç–yan etki eşleştirme sistemi. RAG + LLM mimarisiyle belirtileri ilaçlarla ilişkilendiriyor; ölçeklenebilir veri hatları ve titiz değerlendirmeyle 0.95 F1 skoruna ulaştım."
+           data-en="A drug–adverse-effect matching system processing 3.5M+ records from openFDA, FAERS, SIDER and OnSIDES. A RAG + LLM architecture links symptoms to drugs; with scalable data pipelines and rigorous evaluation I reached a 0.95 F1 score.">openFDA, FAERS, SIDER ve OnSIDES kaynaklarından 3.5M+ kaydı işleyen bir ilaç–yan etki eşleştirme sistemi. RAG + LLM mimarisiyle belirtileri ilaçlarla ilişkilendiriyor; ölçeklenebilir veri hatları ve titiz değerlendirmeyle 0.95 F1 skoruna ulaştım.</p>
+        <div class="proj-stats"><div><strong>0.95</strong><span>F1</span></div><div><strong>3.5M+</strong><span data-tr="Kayıt" data-en="Records">Kayıt</span></div></div>
+        <div class="tag-row"><span>RAG</span><span>LLM</span><span>openFDA</span><span>FAERS</span><span>SIDER</span></div>
+      </div>
+    </article>
+
+    <article class="proj-row reveal">
+      <figure class="proj-row-media"><img src="images/proj-facewell.webp" alt="FaceWell — yüz analiz paneli" loading="lazy" /></figure>
+      <div class="proj-row-text">
+        <span class="proj-row-num">04</span>
+        <span class="proj-tag-year" data-tr="Bilgisayarlı Görü · Gerçek Zamanlı" data-en="Computer Vision · Real-time">Bilgisayarlı Görü · Gerçek Zamanlı</span>
+        <h3 class="proj-row-title">FaceWell</h3>
+        <p data-tr="Kameradan gerçek zamanlı yüz analizi yapan bir sağlıklı-yaşam uygulaması. OpenCV ve MediaPipe FaceMesh ile yüz ağı, cilt maskesi ve poz tahmini çıkarıyor; tüm sonuçları tek bir panelde skorlayarak kullanıcıya anlaşılır bir geri bildirim veriyor."
+           data-en="A wellness app that performs real-time facial analysis from the camera. Using OpenCV and MediaPipe FaceMesh it extracts a face mesh, skin mask and pose estimation, scoring everything in a single dashboard for clear, readable feedback.">Kameradan gerçek zamanlı yüz analizi yapan bir sağlıklı-yaşam uygulaması. OpenCV ve MediaPipe FaceMesh ile yüz ağı, cilt maskesi ve poz tahmini çıkarıyor; tüm sonuçları tek bir panelde skorlayarak kullanıcıya anlaşılır bir geri bildirim veriyor.</p>
+        <div class="proj-stats"><div><strong>Real-time</strong><span data-tr="Yüz analizi" data-en="Face analysis">Yüz analizi</span></div><div><strong>FaceMesh</strong><span>MediaPipe</span></div></div>
+        <div class="tag-row"><span>OpenCV</span><span>MediaPipe</span><span>FaceMesh</span><span>Python</span></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ CERTIFICATES ============ -->
+<section class="section certificates" id="certificates">
+  <div class="section-head reveal">
+    <span class="section-num">06</span>
+    <h2 class="section-title" data-tr="Sertifikalar &amp; Eğitimler" data-en="Certificates &amp; Training">Sertifikalar &amp; Eğitimler</h2>
+  </div>
+  <div class="cert-grid">
+    <div class="cert-item cert-feat reveal"><div class="cert-thumb"><img src="images/cert-google.webp" alt="Yapay Zekâ ve Teknoloji Akademisi" loading="lazy" /></div><div class="cert-info"><div class="cert-top"><strong data-tr="Yapay Zekâ ve Teknoloji Akademisi" data-en="AI &amp; Technology Academy">Yapay Zekâ ve Teknoloji Akademisi</strong><span class="cert-year">2026</span></div><span class="cert-org">Google · Girişimcilik Vakfı · T3</span></div></div>
+    <a class="cert-item reveal" href="assets/certs/ag-temelleri-1.pdf" target="_blank" rel="noopener"><div class="cert-thumb"><img src="images/cert-ag.webp" alt="Temel Ağ Teknolojileri sertifikası" loading="lazy" /></div><div class="cert-info"><div class="cert-top"><strong data-tr="Temel Ağ Teknolojileri" data-en="Networking Fundamentals">Temel Ağ Teknolojileri</strong><span class="cert-year">2025</span></div><span class="cert-org">BTK Akademi · 2 <span data-tr="modül" data-en="modules">modül</span></span></div></a>
+    <a class="cert-item reveal" href="assets/certs/ai-safety-summit.pdf" target="_blank" rel="noopener"><div class="cert-thumb"><img src="images/cert-aisafety.webp" alt="AI Safety Summit belgesi" loading="lazy" /></div><div class="cert-info"><div class="cert-top"><strong data-tr="Yapay Zekâ Güvenliği Zirvesi" data-en="AI Safety Summit">Yapay Zekâ Güvenliği Zirvesi</strong><span class="cert-year">2024</span></div><span class="cert-org">AI Safety Summit</span></div></a>
+    <a class="cert-item reveal" href="assets/certs/veri-bilimi-python.jpg" target="_blank" rel="noopener"><div class="cert-thumb"><img src="images/cert-veri.webp" alt="Veri Bilimi ve Python sertifikası" loading="lazy" /></div><div class="cert-info"><div class="cert-top"><strong data-tr="Veri Bilimi ve Python" data-en="Data Science &amp; Python">Veri Bilimi ve Python</strong><span class="cert-year">2025</span></div><span class="cert-org">Udemy</span></div></a>
+    <a class="cert-item reveal" href="assets/certs/c-programlama.pdf" target="_blank" rel="noopener"><div class="cert-thumb"><img src="images/cert-c.webp" alt="C Programlama sertifikası" loading="lazy" /></div><div class="cert-info"><div class="cert-top"><strong data-tr="C Programlama" data-en="C Programming">C Programlama</strong><span class="cert-year">2023</span></div><span class="cert-org">Udemy</span></div></a>
+    <a class="cert-item reveal" href="assets/certs/lf-lfd102.pdf" target="_blank" rel="noopener"><div class="cert-thumb"><img src="images/cert-lfd102.webp" alt="Linux Foundation LFD102 sertifikası" loading="lazy" /></div><div class="cert-info"><div class="cert-top"><strong>Linux Foundation — LFD102</strong><span class="cert-year">2025</span></div><span class="cert-org" data-tr="Açık Kaynak Geliştirmeye Giriş" data-en="Intro to Open Source Dev">Açık Kaynak Geliştirmeye Giriş</span></div></a>
+    <a class="cert-item reveal" href="assets/certs/lf-lfel1011.pdf" target="_blank" rel="noopener"><div class="cert-thumb"><img src="images/cert-lfel1011.webp" alt="Linux Foundation LFEL1011 sertifikası" loading="lazy" /></div><div class="cert-info"><div class="cert-top"><strong>Linux Foundation — LFEL1011</strong><span class="cert-year">2025</span></div><span class="cert-org" data-tr="Açık Kaynak Temelleri" data-en="Open Source Essentials">Açık Kaynak Temelleri</span></div></a>
+    <a class="cert-item reveal" href="assets/certs/lf-lfs145.pdf" target="_blank" rel="noopener"><div class="cert-thumb"><img src="images/cert-lfs145.webp" alt="Linux Foundation LFS145 sertifikası" loading="lazy" /></div><div class="cert-info"><div class="cert-top"><strong>Linux Foundation — LFS145</strong><span class="cert-year">2025</span></div><span class="cert-org" data-tr="Açık Kaynak Yönetişimi" data-en="Open Source Governance">Açık Kaynak Yönetişimi</span></div></a>
+    <a class="cert-item reveal" href="assets/certs/temel-linux-201.pdf" target="_blank" rel="noopener"><div class="cert-thumb"><img src="images/cert-linux201.webp" alt="Temel Linux 201 sertifikası" loading="lazy" /></div><div class="cert-info"><div class="cert-top"><strong data-tr="Temel Linux 201" data-en="Linux Essentials 201">Temel Linux 201</strong><span class="cert-year">2025</span></div><span class="cert-org">Linux Foundation</span></div></a>
+    <a class="cert-item reveal" href="assets/certs/itu-emos.pdf" target="_blank" rel="noopener"><div class="cert-thumb"><img src="images/cert-itu.webp" alt="İTÜ EMÖS katılım belgesi" loading="lazy" /></div><div class="cert-info"><div class="cert-top"><strong data-tr="İTÜ EMÖS Katılım Belgesi" data-en="ITU EMÖS Participation">İTÜ EMÖS Katılım Belgesi</strong><span class="cert-year">2024</span></div><span class="cert-org" data-tr="Etkinlik / Zirve" data-en="Event / Summit">Etkinlik / Zirve</span></div></a>
+    <a class="cert-item reveal" href="assets/certs/github.pdf" target="_blank" rel="noopener"><div class="cert-thumb"><img src="images/cert-github.webp" alt="GitHub — Kartal Derin sertifikası" loading="lazy" /></div><div class="cert-info"><div class="cert-top"><strong>GitHub — Kartal Derin</strong><span class="cert-year">2024</span></div><span class="cert-org" data-tr="İleri Git/GitHub" data-en="Advanced Git/GitHub">İleri Git/GitHub</span></div></a>
+    <div class="cert-item reveal"><div class="cert-thumb"><span>BA</span></div><div class="cert-info"><div class="cert-top"><strong>Git &amp; GitHub</strong><span class="cert-year">2025</span></div><span class="cert-org">BTK Akademi</span></div></div>
+    <div class="cert-item reveal"><div class="cert-thumb"><span>BA</span></div><div class="cert-info"><div class="cert-top"><strong data-tr="Yapay Zekâ için Python" data-en="Python for AI">Yapay Zekâ için Python</strong><span class="cert-year">2025</span></div><span class="cert-org">Udemy</span></div></div>
+    <div class="cert-item reveal"><div class="cert-thumb"><span>BA</span></div><div class="cert-info"><div class="cert-top"><strong data-tr="Pythian Go Programı" data-en="Pythian Go Program">Pythian Go Programı</strong><span class="cert-year">2023</span></div><span class="cert-org" data-tr="Go Programlama" data-en="Go Programming">Go Programlama</span></div></div>
+  </div>
+</section>
+
+<!-- ============ SKILLS / TOOLS ============ -->
+<section class="section skills" id="skills">
+  <div class="section-head reveal">
+    <span class="section-num">07</span>
+    <h2 class="section-title" data-tr="Yetenekler &amp; Araçlar" data-en="Skills &amp; Tools">Yetenekler &amp; Araçlar</h2>
+    <p class="section-sub" data-tr="İşin ustalık araçları" data-en="The tools of the craft">İşin ustalık araçları</p>
+  </div>
+  <div class="tools-list">
+    <div class="tool-row reveal">
+      <h3 data-tr="Yapay Zekâ &amp; LLM" data-en="AI &amp; LLMs">Yapay Zekâ &amp; LLM</h3>
+      <div class="tool-right">
+        <p data-tr="LLM’ler, RAG, agent mimarileri, prompt mühendisliği ve function calling — Experilabs’te üretim ortamında uyguladım." data-en="LLMs, RAG, agent architectures, prompt engineering and function calling — applied in production at Experilabs.">LLM’ler, RAG, agent mimarileri, prompt mühendisliği ve function calling — Experilabs’te üretim ortamında uyguladım.</p>
+        <div class="tag-row"><span>GPT-4o</span><span>Gemini</span><span>RAG</span><span>Agno</span><span>LangChain</span><span>Function Calling</span></div>
+      </div>
+    </div>
+    <div class="tool-row reveal">
+      <h3 data-tr="Model &amp; Veri" data-en="ML &amp; Data">Model &amp; Veri</h3>
+      <div class="tool-right">
+        <p data-tr="CNN eğitimi, transfer learning ve XGBoost; NumPy/Pandas ile veri işleme. Cilt kanseri ve ilaç–belirti modellerinde uçtan uca kullandım." data-en="CNN training, transfer learning and XGBoost; data processing with NumPy/Pandas. Used end-to-end in the skin-cancer and drug–symptom models.">CNN eğitimi, transfer learning ve XGBoost; NumPy/Pandas ile veri işleme. Cilt kanseri ve ilaç–belirti modellerinde uçtan uca kullandım.</p>
+        <div class="tag-row"><span>TensorFlow</span><span>Keras</span><span>XGBoost</span><span>Pandas</span><span>NumPy</span></div>
+      </div>
+    </div>
+    <div class="tool-row reveal">
+      <h3 data-tr="Diller" data-en="Languages">Diller</h3>
+      <div class="tool-right">
+        <p data-tr="Yapay zekâ ve backend için ana dilim Python. TypeScript ile MIO’nun arayüzünü, C ve Java ile sistem ve masaüstü çalışmalarını geliştirdim." data-en="Python is my main language for AI and backend. I built MIO’s interface with TypeScript, and systems/desktop work with C and Java.">Yapay zekâ ve backend için ana dilim Python. TypeScript ile MIO’nun arayüzünü, C ve Java ile sistem ve masaüstü çalışmalarını geliştirdim.</p>
+        <div class="tag-row"><span>Python</span><span>TypeScript</span><span>C</span><span>Java</span><span>SQL</span></div>
+      </div>
+    </div>
+    <div class="tool-row reveal">
+      <h3 data-tr="Otomasyon &amp; Backend" data-en="Automation &amp; Backend">Otomasyon &amp; Backend</h3>
+      <div class="tool-right">
+        <p data-tr="n8n ile iş akışı otomasyonu; FastAPI, Streamlit ve Gradio ile servis ve arayüzler; Docker ile paketleme. Patika Global’de üretim otomasyonlarında kullandım." data-en="Workflow automation with n8n; services and interfaces with FastAPI, Streamlit and Gradio; packaging with Docker. Used in production automations at Patika Global.">n8n ile iş akışı otomasyonu; FastAPI, Streamlit ve Gradio ile servis ve arayüzler; Docker ile paketleme. Patika Global’de üretim otomasyonlarında kullandım.</p>
+        <div class="tag-row"><span>n8n</span><span>FastAPI</span><span>Streamlit</span><span>Gradio</span><span>Docker</span></div>
+      </div>
+    </div>
+    <div class="tool-row reveal">
+      <h3 data-tr="Bilgisayarlı Görü" data-en="Computer Vision">Bilgisayarlı Görü</h3>
+      <div class="tool-right">
+        <p data-tr="OpenCV ve MediaPipe ile gerçek zamanlı yüz analizi ve görüntü işleme; dermatoskopik görüntülerde sınıflandırma. FaceWell ve cilt kanseri projelerinde uyguladım." data-en="Real-time facial analysis and image processing with OpenCV and MediaPipe; classification on dermatoscopic images. Applied in FaceWell and the skin-cancer project.">OpenCV ve MediaPipe ile gerçek zamanlı yüz analizi ve görüntü işleme; dermatoskopik görüntülerde sınıflandırma. FaceWell ve cilt kanseri projelerinde uyguladım.</p>
+        <div class="tag-row"><span>OpenCV</span><span>MediaPipe</span><span>FaceMesh</span></div>
+      </div>
+    </div>
+    <div class="tool-row reveal">
+      <h3 data-tr="Araçlar &amp; Ortam" data-en="Tools &amp; Environment">Araçlar &amp; Ortam</h3>
+      <div class="tool-right">
+        <p data-tr="Git &amp; GitHub ile sürüm kontrolü, Linux ortamı, REST API entegrasyonları ve yapay zekâ destekli geliştirme araçları günlük iş akışımın parçası." data-en="Version control with Git &amp; GitHub, a Linux environment, REST API integrations and AI-assisted dev tools are part of my daily workflow.">Git &amp; GitHub ile sürüm kontrolü, Linux ortamı, REST API entegrasyonları ve yapay zekâ destekli geliştirme araçları günlük iş akışımın parçası.</p>
+        <div class="tag-row"><span>Git</span><span>GitHub</span><span>Linux</span><span>Claude</span><span>Cursor</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="lang-row reveal" style="margin-top:clamp(28px,3vw,40px)">
+    <div class="lang"><strong data-tr="Türkçe" data-en="Turkish">Türkçe</strong><span data-tr="Ana dil" data-en="Native">Ana dil</span></div>
+    <div class="lang"><strong data-tr="İngilizce" data-en="English">İngilizce</strong><span>B1 – Intermediate</span></div>
+  </div>
+</section>
+
+<!-- ============ LEADERSHIP & CLUBS ============ -->
+<section class="section clubs" id="clubs">
+  <div class="section-head reveal">
+    <span class="section-num">08</span>
+    <h2 class="section-title" data-tr="Liderlik &amp; Kulüpler" data-en="Leadership &amp; Clubs">Liderlik &amp; Kulüpler</h2>
+  </div>
+  <div class="jcards">
+    <article class="jcard jcard-rev reveal">
+      <figure class="jcard-media">
+        <img src="images/club-social-2.webp" alt="Marmara Üniversitesi Sosyal Aktiviteler Kulübü ekibi" loading="lazy" />
+        <figcaption>MÜSAK · <span data-tr="Kulüp Ekibi" data-en="Club Team">Kulüp Ekibi</span></figcaption>
+      </figure>
+      <div class="jcard-body">
+        <span class="jcard-year">2025 — 2026</span>
+        <h4 class="jcard-title" data-tr="Genel Kurul Başkan Yardımcısı" data-en="Vice-Chair, General Assembly">Genel Kurul Başkan Yardımcısı</h4>
+        <span class="jcard-org" data-tr="Marmara Ü. Sosyal Aktiviteler Kulübü (MÜSAK)" data-en="Marmara U. Social Activities Club (MÜSAK)">Marmara Ü. Sosyal Aktiviteler Kulübü (MÜSAK)</span>
+        <div class="jcard-highlight" data-tr="🏆 Başkan yardımcılığım döneminde okulun en çok üyeye sahip 3. kulübü" data-en="🏆 The 3rd most-subscribed club on campus during my vice-chairmanship">🏆 Başkan yardımcılığım döneminde okulun en çok üyeye sahip 3. kulübü</div>
+        <p data-tr="Genel kurul süreçlerini yönettim ve stratejik kararlarda aktif rol üstlendim; etkinlik ve gezilerin planlamasını, bütçesini ve saha organizasyonunu yürüttüm." data-en="Led general-assembly processes and took an active role in strategic decisions; ran the planning, budgeting and on-site organisation of events and trips.">Genel kurul süreçlerini yönettim ve stratejik kararlarda aktif rol üstlendim; etkinlik ve gezilerin planlamasını, bütçesini ve saha organizasyonunu yürüttüm.</p>
+        <div class="tag-row">
+          <span data-tr="Liderlik" data-en="Leadership">Liderlik</span>
+          <span data-tr="Etkinlik Yönetimi" data-en="Event Management">Etkinlik Yönetimi</span>
+          <span data-tr="Organizasyon" data-en="Organisation">Organizasyon</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="jcard reveal">
+      <figure class="jcard-media">
+        <img src="images/club-kapadokya.webp" alt="Sosyal Aktiviteler Kulübü Kapadokya gezisi" loading="lazy" />
+        <figcaption data-tr="Kapadokya Gezisi" data-en="Cappadocia Trip">Kapadokya Gezisi</figcaption>
+      </figure>
+      <div class="jcard-body">
+        <span class="jcard-year">2025</span>
+        <h4 class="jcard-title" data-tr="Etkinlik Komitesi Başkanı" data-en="Head of Events Committee">Etkinlik Komitesi Başkanı</h4>
+        <span class="jcard-org" data-tr="Sosyal Aktiviteler Kulübü" data-en="Social Activities Club">Sosyal Aktiviteler Kulübü</span>
+        <p data-tr="Kapadokya gezisi dâhil çok sayıda gezi ve etkinliğin uçtan uca planlama, bütçe ve saha organizasyonunu üstlendim; onlarca öğrenciye unutulmaz deneyimler yaşattık." data-en="Owned the end-to-end planning, budgeting and on-site organisation of many trips and events, including the Cappadocia trip — creating memorable experiences for dozens of students.">Kapadokya gezisi dâhil çok sayıda gezi ve etkinliğin uçtan uca planlama, bütçe ve saha organizasyonunu üstlendim; onlarca öğrenciye unutulmaz deneyimler yaşattık.</p>
+        <div class="tag-row">
+          <span data-tr="Gezi Organizasyonu" data-en="Trip Organisation">Gezi Organizasyonu</span>
+          <span data-tr="Bütçe" data-en="Budgeting">Bütçe</span>
+          <span data-tr="Saha Yönetimi" data-en="On-site Ops">Saha Yönetimi</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="jcard jcard-rev reveal">
+      <figure class="jcard-media">
+        <img src="images/club-macsec.webp" alt="MACSEC MACTECH etkinliği" loading="lazy" />
+        <figcaption>MACSEC · MACTECH</figcaption>
+      </figure>
+      <div class="jcard-body">
+        <span class="jcard-year">2024</span>
+        <h4 class="jcard-title" data-tr="Kariyer Topluluğu Başkan Yrd." data-en="Vice-Chair, Career Community">Kariyer Topluluğu Başkan Yrd.</h4>
+        <span class="jcard-org" data-tr="Bilgisayar Mühendisliği Kulübü · MACSEC" data-en="Computer Engineering Club · MACSEC">Bilgisayar Mühendisliği Kulübü · MACSEC</span>
+        <p data-tr="Öğrencileri sektörle buluşturan kariyer günleri ve MACTECH gibi teknik seminerler düzenledim; konuşmacı ve içerik koordinasyonunu üstlendim." data-en="Organised career days and technical seminars like MACTECH connecting students with the industry, coordinating speakers and content.">Öğrencileri sektörle buluşturan kariyer günleri ve MACTECH gibi teknik seminerler düzenledim; konuşmacı ve içerik koordinasyonunu üstlendim.</p>
+        <div class="tag-row">
+          <span data-tr="Kariyer Günleri" data-en="Career Days">Kariyer Günleri</span>
+          <span data-tr="Teknik Seminer" data-en="Tech Seminars">Teknik Seminer</span>
+          <span>IEEE Marmara</span>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ REFERENCE ============ -->
+<section class="section reference">
+  <div class="section-head reveal">
+    <span class="section-num">09</span>
+    <h2 class="section-title" data-tr="Referans" data-en="Reference">Referans</h2>
+  </div>
+  <figure class="ref-card reveal">
+    <blockquote data-tr="Seninle çalışmak bizler için de ayrı keyifliydi Barış. Gelişimini izlemek ve bu süreçte sana rehberlik etmek güzel bir deneyimdi. Öğrenme iştahının hiç bitmemesi dileğiyle :)"
+                data-en="Working with you was a real pleasure for us too, Barış. Watching you grow and mentoring you along the way was a wonderful experience. May your appetite for learning never fade :)">Seninle çalışmak bizler için de ayrı keyifliydi Barış. Gelişimini izlemek ve bu süreçte sana rehberlik etmek güzel bir deneyimdi. Öğrenme iştahının hiç bitmemesi dileğiyle :)</blockquote>
+    <figcaption class="ref-author">
+      <img src="images/onat-guler.webp" alt="Onat Güler" loading="lazy" />
+      <div><strong>Onat Güler</strong><span>Team Leader · Experilabs</span></div>
+    </figcaption>
+  </figure>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact" id="contact">
+  <div class="contact-glow" aria-hidden="true"></div>
+  <div class="contact-inner">
+    <span class="section-num reveal">10</span>
+    <h2 class="contact-title reveal" data-tr="Beraber üretelim." data-en="Let’s build together.">Beraber üretelim.</h2>
+    <p class="contact-sub reveal" data-tr="Yeni fırsatlara, iş birliklerine ve yapay zekâ projelerine açığım. Bir merhaba yeter."
+       data-en="I’m open to new opportunities, collaborations and AI projects. A simple hello is enough.">Yeni fırsatlara, iş birliklerine ve yapay zekâ projelerine açığım. Bir merhaba yeter.</p>
+    <div class="contact-grid reveal">
+      <a href="tel:+905050347961" class="contact-card" data-magnetic><span class="cc-label" data-tr="Telefon" data-en="Phone">Telefon</span><span class="cc-value">+90 505 034 79 61</span></a>
+      <a href="mailto:barisoriginal@gmail.com" class="contact-card" data-magnetic><span class="cc-label" data-tr="E-posta" data-en="Email">E-posta</span><span class="cc-value">barisoriginal@gmail.com</span></a>
+      <a href="https://www.linkedin.com/in/barisaliskan" target="_blank" rel="noopener" class="contact-card" data-magnetic><span class="cc-label">LinkedIn</span><span class="cc-value">barisaliskan</span></a>
+    </div>
+    <div class="contact-socials reveal">
+      <a href="https://github.com/barisaliskan" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.kaggle.com/barisaliskan" target="_blank" rel="noopener">Kaggle</a>
+      <a href="https://huggingface.co/barisaliskan" target="_blank" rel="noopener">Hugging Face</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>© <span id="year">2026</span> Barış Alışkan</span>
+    <a href="#top" class="foot-top" data-tr="Yukarı ↑" data-en="Back to top ↑">Yukarı ↑</a>
+    <span class="foot-loc" data-tr="İstanbul, Türkiye" data-en="İstanbul, Türkiye">İstanbul, Türkiye</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
